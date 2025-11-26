@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal portfolio website</title>
@@ -9,13 +8,15 @@
     <script src="https://kit.fontawesome.com/15fcdb12a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id = "header">
-        <div class = "container">
+    <!-- header -->
+    <div id="header">
+        <div class="container">
             <nav>
-                <!--<img src="images/cat.jpg" class = "mai">-->
+                <!-- <img src="images/cat.jpg" class="mai"> -->
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Hobbies</a></li>
                     <li><a href="#services">Languages & Tools</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -25,168 +26,245 @@
             </nav>
             <div class="header-text">
                 <p>Computer Science Student</p>
-                <h1>Hi, I'm <span>Victor</span><br>Tan From Toronto </h1>
-    
+                <h1>Hi, I'm <span>Victor</span><br>Tan From Toronto</h1>
             </div>
         </div>
     </div>
-<!-----about----------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/headshot1vic.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am a fourth year Computer science student at the University of Western Ontario. Ever since playing pokemon as a child,
-                    Ive been super interested with software and its development. I enjoy challenging myself to learn more and further
-                    myself in all aspects of my life.<br>Outside of my extended hours in front of a screen, I spend my time learning about my hobbies and activities like fish keeping,
-                     fishing, bouldering, martial arts, tinkering with cars, and more.
-                     Im always looking for something new to learn and I enjoy working with others.
 
-                </p>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/headshot.png" alt="Headshot of Victor">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a Fifth year Computer Science student at the University of Western Ontario.
+                        Ever since playing Pokemon as a child, I have been very interested in software and its development.
+                        I enjoy challenging myself to learn more and push myself in all areas of my life.<br>
+                        Outside of my extended hours in front of a screen, I spend my time learning about my hobbies
+                        and activities like fish keeping, fishing, bouldering, martial arts, tinkering with cars, and more.
+                        I am always looking for something new to learn and I enjoy working with others.
+                    </p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                </div>
-                <div class="tab-contents active-tab" id="experience">
-                    <ul>
-                        <li><span>April 2021 - August 2021</span><br>Pharmacy assistant at Loblaws Pharmacy</li>
-                        <li><span>June 2014 - April 2021</span><br>Volunteer at Sunny Tang Martial Arts</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2021 - Present</span><br>BSc at the University of Western Ontario</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li><span>Java</span><br>Experienced in working with Java</li>
-                        <li><span>C</span><br>Experienced in working with C</li>
-                        <li><span>Html & css</span><br>Developed a website to display my projects</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!---------Languages and tools--- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">Languages & tools</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-brands fa-java"></i>
-                <h2>Java</h2>
-                <!--<p></p>
-                <a href="LINK HERE" target="_blank">Learn more</a>-->
-            </div>
-            <div>
-                <h3><i class="fa-solid fa-c"></i> </h3>
-                <h2>Programming</h2>
-                <!--<p></p>
-                <a href="LINK HERE" target="_blank">Learn more</a>-->
-            </div>
-            <div>
-                <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i>
-                <h2>HTML & CSS</h2>
-                <!--<p></p>
-                <a href="LINK HERE" target="_blank">Learn more</a>-->
-            </div>
-        </div>
-    </div>
-</div>
-<!----------portfolio------------>
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/414160207_1072707954153747_6146614649246316154_n.png">
-                <div class="layer">
-                    <h3>Mine-Sweeper</h3>
-                    <p>Java Programming</p>
-                    <a href="https://github.com/vt3n03/Mine-Sweeper.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/415903140_373567272035910_7809547853041313977_n.png">
-                <div class="layer">
-                    <h3>Bstreec</h3>
-                    <p>C Programming</p>
-                    <a href="https://github.com/vt3n03/bstreec.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/415904574_264828983293747_7447407021684820603_n.png">
-                <div class="layer">
-                    <h3>Stations</h3>
-                    <p>Java Programming</p>
-                    <a href="https://github.com/vt3n03/Stations.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="https://github.com/vt3n03" target="_blank" class="btn">See more</a>
-    </div>
-</div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
 
-<!----------contact----------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>v.tan.victor@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>(647) 719-1911</p>
-                
-                <p><a href="https://www.linkedin.com/in/victor-tan-517214173" target="_blank"><i class="fa-brands fa-linkedin"></i></a>Linkedin</p>
-                
-                <a href="images/Victor Resume 2024.pdf" download class="btn btn2">Download CV</a>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>May 2025 - August 2025</span><br>Fullstack Software Engineer at Avanade Canada</li>
+                            <li><span>April 2021 - August 2021</span><br>Pharmacy assistant at Loblaws Pharmacy</li>
+                            <li><span>June 2014 - April 2021</span><br>Volunteer at Sunny Tang Martial Arts</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br>BSc at the University of Western Ontario</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-            <!---
-            <div class="contact-right">
-            <form>
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            </div>
-        -->
         </div>
     </div>
-    <!--<div class="copyright">
-        <p>copyright @Victor.</p>
-    </div>-->
-</div>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
+    <section class="noise-gallery" id="gallery">
+    <div class="gallery-container">
+
+        <header class="gallery-header">
+        <div class="gallery-text">
+            <h2>Some Hobbies</h2>
+            <p>Each card has its own spinning object. Scroll inside to spin.</p>
+        </div>
+
+        <div class="gallery-buttons">
+            <button class="scroll-btn left-btn">&#10094;</button>
+            <button class="scroll-btn right-btn">&#10095;</button>
+        </div>
+        </header>
+
+        <div class="scroll-container" id="scrollArea">
+        <ul class="card-set">
+            <!-- object 1 -->
+            <li class="card-container">
+            <div class="card-info">
+                <h3 class="card-title">Cars</h3>
+                <p>Cars are so cool!</p>
+            </div>
+            <canvas
+                class="spin-canvas"
+                width="800"
+                height="800"
+                data-folder="images/obj1"
+                data-frames="220">
+            </canvas>
+            </li>
+
+            <!-- object 2 -->
+            <li class="card-container">
+            <div class="card-info">
+                <h3 class="card-title">Fish Keeping</h3>
+                <p>Got my first aquarium at 7 and never looked back</p>
+            </div>
+            <canvas
+                class="spin-canvas"
+                width="800"
+                height="800"
+                data-folder="images/obj2"
+                data-frames="120">
+            </canvas>
+            </li>
+
+            <!-- object 3 -->
+            <li class="card-container">
+            <div class="card-info">
+                <h3 class="card-title">Fishing</h3>
+                <p>I've been hooked from the moment I started</p>
+            </div>
+            <canvas
+                class="spin-canvas"
+                width="800"
+                height="800"
+                data-folder="images/obj3"
+                data-frames="120">
+            </canvas>
+            </li>
+
+            <!-- object 4 -->
+            <li class="card-container">
+            <div class="card-info">
+                <h3 class="card-title">Table Tennis</h3>
+                <p>Still new to the sport!</p>
+            </div>
+            <canvas
+                class="spin-canvas"
+                width="800"
+                height="800"
+                data-folder="images/obj4"
+                data-frames="60">
+            </canvas>
+            </li>
+        </ul>
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- languages and tools -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Languages & Developer tools</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                </div>
+                <div>
+                    <h3><i class="fa-solid fa-c"></i>    <i class="fa-solid fa-c"></i><i class="fa-solid fa-plus"></i><i class="fa-solid fa-plus"></i></h3>
+                    <h2>C / C++</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i>
+                    <h2>HTML & CSS</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-php"></i>
+                    <h2>PHP</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Javascript</h2>
+                </div>
+                 <div>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h2>Git</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-accusoft"></i>
+                    <h2>Azure</h2>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-docker"></i>
+                    <h2>Docker</h2>
+                </div>                                                                                    
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/414160207_1072707954153747_6146614649246316154_n.png" alt="Minesweeper">
+                    <div class="layer">
+                        <h3>Mine-Sweeper</h3>
+                        <p>Java Programming</p>
+                        <a href="https://github.com/vt3n03/Mine-Sweeper.git" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/415903140_373567272035910_7809547853041313977_n.png" alt="Bstreec">
+                    <div class="layer">
+                        <h3>Bstreec</h3>
+                        <p>C Programming</p>
+                        <a href="https://github.com/vt3n03/bstreec.git" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/415904574_264828983293747_7447407021684820603_n.png" alt="Stations">
+                    <div class="layer">
+                        <h3>Stations</h3>
+                        <p>Java Programming</p>
+                        <a href="https://github.com/vt3n03/Stations.git" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/vt3n03" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>v.tan.victor@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>(647) 719-1911</p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/victor-tan-517214173" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        Linkedin
+                    </p>
+                    <a href="images/Victor_resume_2025.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="spin.js"></script>
 </body>
-
 </html>
